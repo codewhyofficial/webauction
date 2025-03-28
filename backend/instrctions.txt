@@ -1,0 +1,8 @@
+Install eth_account library 
+
+run this command 
+
+uvicorn main:app --reload
+
+
+in the backend directory

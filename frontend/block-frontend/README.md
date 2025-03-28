@@ -27,3 +27,15 @@ npm run dev
 ```sh
 npm run build
 ```
+In order to run the setup 
+
+
+pull the complete code 
+
+run 
+
+npm install // to install the packages 
+
+npm run dev 
+
+
