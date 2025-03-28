@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen flex flex-col bg-gray-900 text-white">
-    <!-- Navbar -->
     <nav class="bg-gray-800 p-4">
       <div class="container mx-auto flex justify-between items-center">
         <h1 class="text-xl font-bold">Web3 Auth</h1>
@@ -13,7 +12,7 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
+
     <main class="flex-grow flex items-center justify-center">
       <div class="p-6 bg-gray-800 rounded-xl text-center" v-if="!walletStore.authenticated">
         <h1 class="text-xl font-bold">Ethereum Authentication</h1>
@@ -32,7 +31,6 @@
         <p v-if="walletStore.errorMessage" class="mt-2 text-red-500">{{ walletStore.errorMessage }}</p>
       </div>
 
-      <!-- Profile View -->
       <div class="p-6 bg-gray-800 rounded-xl text-center" v-else>
         <h1 class="text-xl font-bold">Profile</h1>
         <p class="mt-2">Welcome, <strong>{{ walletStore.walletAddress }}</strong></p>
@@ -40,7 +38,6 @@
       </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 p-4 text-center text-sm">
       <p>© 2025 Web3 Auth. All rights reserved.</p>
     </footer>

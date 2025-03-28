@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import { BrowserProvider } from "ethers"; // Ensure correct import
+import { BrowserProvider } from "ethers"; 
 import axios from "axios";
 
 export const useWalletStore = defineStore("wallet", () => {

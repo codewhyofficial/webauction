@@ -17,11 +17,11 @@ app.add_middleware(
 
 
 app.include_router(auth_router)
-# Configure Logging
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
-# Middleware to log requests and response status codes
+# we should add it to track the logging of http requests 
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start_time = time.time()
